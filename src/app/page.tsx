@@ -165,7 +165,9 @@ export default function Home() {
               HIPAA Compliant (45 CFR § 164)
             </span>
             <span>•</span>
-            <span>Engineered by <strong>Yash Jain</strong></span>
+            <span className="inline-flex items-center gap-1 font-bold text-teal-600 dark:text-teal-400 bg-teal-500/10 px-2.5 py-1 rounded-md border border-teal-500/20 text-xs">
+              Powered by TheWebVale
+            </span>
           </div>
         </div>
       </footer>

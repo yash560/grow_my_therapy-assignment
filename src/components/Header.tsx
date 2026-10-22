@@ -39,10 +39,10 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-bold text-lg text-slate-900 dark:text-white tracking-tight">
+                <span className="font-bold text-base sm:text-lg text-slate-900 dark:text-white tracking-tight">
                   Grow My Therapy
                 </span>
-                <span className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 dark:bg-teal-950/70 dark:text-teal-300 border border-teal-200 dark:border-teal-800/60">
+                <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-semibold uppercase px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 dark:bg-teal-950/70 dark:text-teal-300 border border-teal-200 dark:border-teal-800/60">
                   <ShieldCheck className="w-3 h-3 text-teal-600 dark:text-teal-400" />
                   HIPAA Secured
                 </span>
@@ -54,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           {/* Navigation Tabs */}
-          <nav className="hidden md:flex items-center gap-1 bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl border border-slate-200/60 dark:border-slate-700/60">
+          <nav className="hidden lg:flex items-center gap-1 bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl border border-slate-200/60 dark:border-slate-700/60">
             {tabs.map((tab) => {
               const active = activeTab === tab.id;
               return (
@@ -104,8 +104,8 @@ export const Header: React.FC<HeaderProps> = ({
 
         </div>
 
-        {/* Mobile Navigation Row */}
-        <div className="flex md:hidden overflow-x-auto py-2 gap-1.5 border-t border-slate-200/80 dark:border-slate-800 scrollbar-none">
+        {/* Mobile & Tablet Navigation Row */}
+        <div className="flex lg:hidden overflow-x-auto py-2 gap-1.5 border-t border-slate-200/80 dark:border-slate-800 scrollbar-none w-full max-w-full">
           {tabs.map((tab) => (
             <button
               key={tab.id}
